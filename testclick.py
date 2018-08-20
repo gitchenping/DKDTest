@@ -16,12 +16,12 @@ options = webdriver.ChromeOptions()
 options.add_argument('disable-infobars')
 driver=webdriver.Chrome(iedriver,chrome_options=options)
 
-url="http://www.yuntushuguan.com/firsttransfer.jsp?enc=79a2424ac5f85024f2f6d82ce5ecbe58bef1365ff2f2b306e0fa70824eb59c7eff8fc0a8914efee67958df89a9cd02aadb0b106eebda7d8db88467134807b716a1cf9ae140a6e3e3f590d5cf677269a39ecd4405d7ef8da7fa466d43bed1b10705fc326cc3f9d65ae3c1b2c0c1895579ee33dadb8b57d6e92d44deb2dbf02896a20eb35cb5b667f77a9ca7644e6aef74&unitid=7320"
+url="http://www.yuntushuguan.com/firsttransfer.jsp?enc=79a2424ac5f8502497f0fc52f7d794b1bef1365ff2f2b306e0fa70824eb59c7eff8fc0a8914efee67958df89a9cd02aa77e23ed93891e7c5b88467134807b716a1cf9ae140a6e3e3f8d0291b36ed0dc5ca4b141b71933c47fa466d43bed1b10750dad7d0831ab35180c645a64e336dcd22d66c7253bb870d2d44deb2dbf02896a20eb35cb5b667f77a9ca7644e6aef74&unitid=7320"
 
 driver.get(url)
 time.sleep(3)
 n=0
-for i in range(701,751):
+for i in range(211,261):
     driver.find_element_by_id('pageInput').clear()
     driver.find_element_by_id('pageInput').send_keys(str(i))
     driver.find_element_by_name('input').click()
