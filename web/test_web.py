@@ -275,7 +275,7 @@ if __name__ == '__main__':
         # suiteTest.addTest(TestLogin("testCase2"))
         ###########注册##########
 
-        suiteTest.addTest(TestRegister("test_register"))
+        # suiteTest.addTest(TestRegister("test_register"))
         ###########开户##########
 
         # suiteTest.addTest(TestOpenAccount("test_openaccount"))

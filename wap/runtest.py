@@ -11,7 +11,9 @@ if __name__ == '__main__':
     # 添加Suite
     print "run start...."
 
-    # suiteTest=suite_stock()
+
+    #存量用户和新用户用例切换
+    suiteTest=suite_stock()
     # suiteTest=suite_new()
 
 

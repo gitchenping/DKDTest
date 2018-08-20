@@ -19,9 +19,9 @@ def suite_stock():
     # suiteTest.addTest(TestLogin("test_login_wrongpassword"))
     suiteTest.addTest(TestLogin("test_login_success"))
 
-    # suiteTest.addTest(TestCharge("test_charge_withoutAccount"))
 
-    #
+    ################已注册未开户###########################
+    #suiteTest.addTest(TestCharge("test_charge_withoutAccount"))
     # suiteTest.addTest(TestRiskEvaluate("test_riskevaluate_complete"))
     #
     # ########################充值######################
@@ -41,9 +41,9 @@ def suite_stock():
 
     ##########################投资项目###############################
 
-    # suiteTest.addTest(TestInvest("test_invest_amtltmininvestamt"))
-    # suiteTest.addTest(TestInvest("test_invest_amtgtbalance"))
-    # suiteTest.addTest(TestInvest("test_invest_amteqmininvestamt"))
+    suiteTest.addTest(TestInvest("test_invest_amtltmininvestamt"))
+    suiteTest.addTest(TestInvest("test_invest_amtgtbalance"))
+    suiteTest.addTest(TestInvest("test_invest_amteqmininvestamt"))
 
     # suiteTest.addTest(TestLogin("test_login_quit"))
 

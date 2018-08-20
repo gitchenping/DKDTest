@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>API自动化测试结果报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+table       { font-size: 100%; }
+
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">API自动化测试结果报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> DKDtester</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-07-06 18:49:43</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.602000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 4，通过 4，通过率= 100.00%</p>
+
+<p class='description'></p>
+</div>
+
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 4 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 4 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>login.TestLoginAction</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login: 用户名、密码正确</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre>
+    
+pt1_1: 7
+['login']
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>resttradepassword.TestResetPasswordAction</td>
+    <td class="text-center">2</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',2)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_fail: token错误</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre>
+    
+pt2_1: E:\Python27\lib\site-packages\urllib3\connectionpool.py:857: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+{u'resCode': u'E0000002', u'resMsg': u'token\u4fe1\u606f\u5df2\u5931\u6548\u6216\u975e\u6cd5'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_resetpwd: token正确</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
+    <pre>
+    
+pt2_2: E:\Python27\lib\site-packages\urllib3\connectionpool.py:857: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>withdraw.TestWithdrawAction</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',1)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw: 用户名、密码正确</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in">
+    <pre>
+    
+pt3_1: 7
+['lmWithdraw']
+[[2.0, u'lmWithdraw', u'\u63d0\u73b0\u5165\u53e3', u'http://10.10.1.65:8080', u'/api/3.0/W/lmWithdraw', u'post', u'{"params": \'{"token":""}\',"from": "W"}', u'{"resCode":"0000","resMsg":"\u6210\u529f"}', u'Y']]
+{u'userName': u'\u5468\u4e00', u'bankIcon': u'http://10.10.1.65/common/bank/icon/fa/7a/fa7a57248b7e40b88ebcc6886f83f049.jpg', u'normalWithdrawFlag': False, u'resCode': u'0000', u'bankName': u'\u4e2d\u56fd\u5efa\u8bbe\u94f6\u884c', u'availableAmt': 17388735.7, u'withdrawReminder': {u'wholesaleWithdrawFeeScale': u'5\u4e07~10\u4e07\uff08\u542b\uff09\uff0c\u6bcf\u7b14\u6536\u53d610\u5143\u624b\u7eed\u8d39\n10\u4e07~50\u4e07\uff08\u542b\uff09\uff0c\u6bcf\u7b14\u6536\u53d615\u5143\u624b\u7eed\u8d39\n50\u4e07~100\u4e07\uff08\u542b\uff09\uff0c\u6bcf\u7b14\u6536\u53d620\u5143\u624b\u7eed\u8d39\n100\u4e07\u4ee5\u4e0a\uff0c\u6536\u53d6\u63d0\u73b0\u91d1\u989d\u7684\u4e07\u5206\u4e4b0.2\u4e3a\u624b\u7eed\u8d39', u'wholesaleWithrawSwitchReminder': u'\u5355\u7b145\u4e07\u5143\u4ee5\u4e0a\u7684\u63d0\u73b0\u9009\u62e9', u'superOnlineBankingSystemReminder': u'\u4e0d\u9650\u65f6\u95f4\uff0c\u4e0d\u9650\u7b14\u6570\uff0c\u514d\u624b\u7eed\u8d39\uff0c\u5f53\u65e5\u5230\u8d26', u'wholesaleWithdrawAllowTime': u'\u53ef\u63d0\u73b0\u65f6\u95f4\uff1a\u5de5\u4f5c\u65e509:00\u201416:30', u'lmWholesaleWithdrawFreeReminder': u'\u53ef\u7533\u8bf7\u63d0\u73b0\u65f6\u95f4\uff1a\n\u5de5\u4f5c\u65e59:00~16:30\n\n\u5230\u8d26\u65f6\u95f4\uff1a\n\u5de5\u4f5c\u65e512:00\u4e4b\u524d\u63d0\u73b0\u9884\u8ba112:00\u5de6\u53f3\u5230\u8d26\n12:00\u4e4b\u540e\u63d0\u73b0\u9884\u8ba11\u5c0f\u65f6\u5185\u5230\u8d26\n\n\u624b\u7eed\u8d39\uff1a\n\u76ee\u524d\u7531\u5e73\u53f0\u4e3a\u7528\u6237\u627f\u62c5', u'wholesaleWithdrawInputReminder': u'\u8bf7\u8f93\u51655\u4e07\u5143\u4ee5\u4e0a\u91d1\u989d', u'wholesaleWithdrawFreeReminder': u'\u5927\u989d\u63d0\u73b0\u6bcf\u65e5\u96501\u7b14\uff0c\u63d0\u73b0\u540e\u9884\u8ba1\u5f53\u65e5\u5230\u8d26\uff0c\u6682\u514d\u624b\u7eed\u8d39', u'lmSuperOnlineBankingSystemWithdrawReminder': u'\u53ef\u7533\u8bf7\u63d0\u73b0\u65f6\u95f4\uff1a\n7*24\u5c0f\u65f6\n\n\u5230\u8d26\u65f6\u95f4\uff1a\n\u5de5\u4f5c\u65e500:00~12:00\u63d0\u73b0\u9884\u8ba112:00\u5de6\u53f3\u5230\u8d26\n12:00~23:59\u63d0\u73b0\u9884\u8ba11\u5c0f\u65f6\u5185\u5230\u8d26\n\u5468\u672b\u53ca\u8282\u5047\u65e5\u63d0\u73b0\u9884\u8ba11\u5c0f\u65f6\u5185\u5230\u8d26\n\n\u624b\u7eed\u8d39\uff1a\n\u76ee\u524d\u7531\u5e73\u53f0\u4e3a\u7528\u6237\u627f\u62c5', u'superOnlineBankingSystemInputReminder': u'\u5355\u7b14\u9650\u989d5\u4e07\u5143', u'wholesaleWithdrawNotFreeReminder': u'\u666e\u901a\u63d0\u73b0\u6bcf\u65e5\u96501\u7b14\uff0c\u63d0\u73b0\u540e\u9884\u8ba1\u5f53\u65e5\u5230\u8d26'}, u'superOnlineMaxWithdrawAmt': 50000, u'bankcard': {u'status': u'VALID', u'platformUserNo': u'LMP2018061200186899', u'accountNo': u'6222***********8817', u'updatedOn': None, u'bankAccountType': u'BANKCARD', u'createdOn': {u'nanos': 0, u'seconds': 44, u'time': 1528857884000L, u'month': 5, u'hours': 10, u'year': 118, u'date': 13, u'minutes': 44, u'day': 3, u'timezoneOffset': -480}, u'userId': 16147, u'accountName': u'\u5468\u4e00', u'bankNumber': u'', u'userRole': u'INVESTOR', u'createdBy': u'SYS', u'updatedBy': u'', u'id': 472, u'bankCode': u'PCBC', u'versionOptimizedLock': 0, u'bankMobile': u'n6AHuz5EDdlY1v2B4P8fiw=='}, u'feeFlag': False, u'minWithdrawAmt': 100, u'availableWithdrawAmt': 11884235.7, u'maxWithdrawAmt': 6000000, u'resMsg': u'\u6210\u529f'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+
+</body>
+</html>
