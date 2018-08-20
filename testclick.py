@@ -16,12 +16,12 @@ options = webdriver.ChromeOptions()
 options.add_argument('disable-infobars')
 driver=webdriver.Chrome(iedriver,chrome_options=options)
 
-url="http://www.yuntushuguan.com/firsttransfer.jsp?enc=79a2424ac5f8502497f0fc52f7d794b1bef1365ff2f2b306e0fa70824eb59c7eff8fc0a8914efee67958df89a9cd02aa77e23ed93891e7c5b88467134807b716a1cf9ae140a6e3e3f8d0291b36ed0dc5ca4b141b71933c47fa466d43bed1b10750dad7d0831ab35180c645a64e336dcd22d66c7253bb870d2d44deb2dbf02896a20eb35cb5b667f77a9ca7644e6aef74&unitid=7320"
+url=""
 
 driver.get(url)
 time.sleep(3)
 n=0
-for i in range(211,261):
+for i in range(262,264):
     driver.find_element_by_id('pageInput').clear()
     driver.find_element_by_id('pageInput').send_keys(str(i))
     driver.find_element_by_name('input').click()
