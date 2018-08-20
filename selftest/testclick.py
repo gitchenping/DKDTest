@@ -16,7 +16,7 @@ options = webdriver.ChromeOptions()
 options.add_argument('disable-infobars')
 driver=webdriver.Chrome(iedriver,chrome_options=options)
 
-url=""
+url="www."
 
 driver.get(url)
 time.sleep(3)
