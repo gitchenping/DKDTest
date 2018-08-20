@@ -1,0 +1,6 @@
+[
+  "test_wap.py::TestLogin::testCase2", 
+  "test_wap.py::TestLogin::testCase3", 
+  "test_wap.py::TestLogin::test_login", 
+  "test_wap.py::TestEnd::test_end"
+]
