@@ -3,7 +3,7 @@ import time
 # from wap.config.Driver import driver
 url="http://10.10.1.65:8083/project/list"
 # driver.get(url)
-time.sleep(5)
+time.sleep(10)
 
 
 class Demo(object):
