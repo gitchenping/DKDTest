@@ -278,9 +278,9 @@ if __name__ == '__main__':
         # suiteTest.addTest(TestRegister("test_register"))
         ###########开户##########
 
-        # suiteTest.addTest(TestOpenAccount("test_openaccount"))
+        suiteTest.addTest(TestOpenAccount("test_openaccount"))
         ##########风险评估#######
-        # suiteTest.addTest(TestRiskevaluate("test_riskevaluate"))
+        suiteTest.addTest(TestRiskevaluate("test_riskevaluate"))
 
         # suiteTest.addTest(TestCharge("test_charge"))
         # suiteTest.addTest(TestWithdraw("test_withdraw"))
