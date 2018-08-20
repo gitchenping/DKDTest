@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # 添加Suite
     print "run start...."
 
-    suiteTest=suite_stock()
+    # suiteTest=suite_stock()
     # suiteTest=suite_new()
 
 
