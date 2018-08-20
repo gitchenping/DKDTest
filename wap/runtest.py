@@ -11,8 +11,8 @@ if __name__ == '__main__':
     # 添加Suite
     print "run start...."
 
-    # suiteTest=suite_stock()
-    # suiteTest=suite_new()
+    suiteTest=suite_stock()
+    suiteTest=suite_new()
 
 
     #确定生成报告的路径
