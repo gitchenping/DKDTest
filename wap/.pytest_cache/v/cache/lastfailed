@@ -1,0 +1,5 @@
+{
+  "test_wap.py::TestLogin::testCase2": true, 
+  "test_wap.py::TestLogin::testCase3": true, 
+  "test_wap.py::TestLogin::test_login": true
+}
