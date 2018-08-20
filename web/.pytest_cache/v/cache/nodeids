@@ -1,0 +1,11 @@
+[
+  "test_web.py::TestLogin::testCase2", 
+  "test_web.py::TestLogin::testCase3", 
+  "test_web.py::TestLogin::test_login", 
+  "test_web.py::TestRegister::test_register", 
+  "test_web.py::TestCharge::test_charge", 
+  "test_web.py::TestWithdraw::test_withdraw", 
+  "test_web.py::TestInvest::test_invest", 
+  "test_web.py::TestAccount::test_account", 
+  "test_web.py::TestEnd::test_end"
+]

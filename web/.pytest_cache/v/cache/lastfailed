@@ -1,0 +1,8 @@
+{
+  "test_web.py::TestAccount::test_account": true, 
+  "test_web.py::TestCharge::test_charge": true, 
+  "test_web.py::TestInvest::test_invest": true, 
+  "test_web.py::TestLogin::test_login": true, 
+  "test_web.py::TestRegister::test_register": true, 
+  "test_web.py::TestWithdraw::test_withdraw": true
+}
