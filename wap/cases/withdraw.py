@@ -181,7 +181,11 @@ class TestWithdraw(unittest.TestCase):
 
     def test_commonwithdraw(self):
         '''大额提现正常50001（账户可提现金额大于50001）'''
+        amount = 50001
+        # self.withdrawpage.enter_commonwithdrawpage()
 
+        self.withdrawpage.input_withdrawamt(amount, False)
+        self.withdrawpage.click_withdrawtoaccountbtn(False)
 
 
 

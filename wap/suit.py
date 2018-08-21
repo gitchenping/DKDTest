@@ -34,8 +34,8 @@ def suite_stock():
 
     # ####################提现#############################
     # suiteTest.addTest(TestWithdraw("test_withdraw_null"))
-    # suiteTest.addTest(TestWithdraw("test_withdraw_over_todayavailabeamt"))
-    # suiteTest.addTest(TestWithdraw("test_withdraw_over_availableamt"))
+    suiteTest.addTest(TestWithdraw("test_withdraw_over_todayavailabeamt"))
+    suiteTest.addTest(TestWithdraw("test_withdraw_over_availableamt"))
     # suiteTest.addTest(TestWithdraw("test_withdraw_over_realwithdrawamt"))
     # suiteTest.addTest(TestWithdraw("test_withdraw_within_availableamt"))
 
