@@ -25,6 +25,7 @@ class TestWithdraw(unittest.TestCase):
 
         # 提现前总金额及可用余额
         cls.beforewithdrawamt = cls.withdrawpage.get_accountamt()
+        cls.afterwithdrawamt = cls.beforewithdrawamt
 
         #进入提现页面
         cls.withdrawpage.click_withdrawbtn()
@@ -60,6 +61,7 @@ class TestWithdraw(unittest.TestCase):
         #将提现后金额重新赋值
         # self.beforewithdrawamt[0] = self.afterchargeamt[0]
         # self.beforewithdrawamt[1] = self.afterchargeamt[1]
+        self.beforewithdrawamt = self.afterwithdrawamt
         pass
 
 
@@ -141,17 +143,51 @@ class TestWithdraw(unittest.TestCase):
         #2.提现前后，金额关系断言
         time.sleep(3)
         self.withdrawpage.enter_myaccountpage()
-        afterchargeamt = self.withdrawpage.get_accountamt()
+        # afterchargeamt = self.withdrawpage.get_accountamt()
 
-        self.assertEqual(afterchargeamt[0] + float(amount), self.beforewithdrawamt[0], "总资产正确")
-        self.assertEqual(afterchargeamt[1] + float(amount), self.beforewithdrawamt[1], "可用余额正确")
+        self.afterwithdrawamt = self.withdrawpage.get_accountamt()
+
+        self.assertEqual(self.afterwithdrawamt[0] + float(amount), self.beforewithdrawamt[0], "总资产正确")
+        self.assertEqual(self.afterwithdrawamt[1] + float(amount), self.beforewithdrawamt[1], "可用余额正确")
 
         # 更新金额
-        self.beforewithdrawamt[0] = afterchargeamt[0]
-        self.beforewithdrawamt[1] = afterchargeamt[1]
+        # self.beforewithdrawamt[0] = afterchargeamt[0]
+        # self.beforewithdrawamt[1] = afterchargeamt[1]
 
 
         #3.交易记录断言
+
+
+    def test_commonwithdraw_fail(self):
+        '''大额提现提现金额小于50000'''
+        amount=49999
+        self.withdrawpage.enter_commonwithdrawpage()
+
+        self.withdrawpage.input_withdrawamt(amount,False)
+        self.withdrawpage.click_withdrawtoaccountbtn(False)
+
+        #提现结果断言
+        # 弹窗处理及断言
+        alert = self.withdrawpage.is_alert_exist()
+        if alert[0]:
+            # 读取告警提示
+            self.assertEqual(alert[1], "提现金额不能小于等于50000元")
+        else:
+            self.assertTrue(alert[0], "没有告警弹窗")
+
+
+        pass
+
+
+    def test_commonwithdraw(self):
+        '''大额提现正常50001（账户可提现金额大于50001）'''
+
+
+
+
+        pass
+
+
 
 
     def test_withdraw_withoutAccount(self):

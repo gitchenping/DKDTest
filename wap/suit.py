@@ -25,25 +25,27 @@ def suite_stock():
     # suiteTest.addTest(TestRiskEvaluate("test_riskevaluate_complete"))
     #
     # ########################充值######################
-    suiteTest.addTest(TestCharge("test_charge_null"))
-    suiteTest.addTest(TestCharge("test_charge_amtlthundred"))
-    suiteTest.addTest(TestCharge("test_charge_amteqhundred"))
-    suiteTest.addTest(TestCharge("test_charge_amtgthundred"))
-    suiteTest.addTest(TestCharge("test_charge_amtoverquota"))
-    suiteTest.addTest(TestCharge("test_charge_bankcharge"))
+    # suiteTest.addTest(TestCharge("test_charge_null"))
+    # suiteTest.addTest(TestCharge("test_charge_amtlthundred"))
+    # suiteTest.addTest(TestCharge("test_charge_amteqhundred"))
+    # suiteTest.addTest(TestCharge("test_charge_amtgthundred"))
+    # suiteTest.addTest(TestCharge("test_charge_amtoverquota"))
+    # suiteTest.addTest(TestCharge("test_charge_bankcharge"))
 
     # ####################提现#############################
-    suiteTest.addTest(TestWithdraw("test_withdraw_null"))
-    suiteTest.addTest(TestWithdraw("test_withdraw_over_todayavailabeamt"))
-    suiteTest.addTest(TestWithdraw("test_withdraw_over_availableamt"))
-    suiteTest.addTest(TestWithdraw("test_withdraw_over_realwithdrawamt"))
-    suiteTest.addTest(TestWithdraw("test_withdraw_within_availableamt"))
+    # suiteTest.addTest(TestWithdraw("test_withdraw_null"))
+    # suiteTest.addTest(TestWithdraw("test_withdraw_over_todayavailabeamt"))
+    # suiteTest.addTest(TestWithdraw("test_withdraw_over_availableamt"))
+    # suiteTest.addTest(TestWithdraw("test_withdraw_over_realwithdrawamt"))
+    # suiteTest.addTest(TestWithdraw("test_withdraw_within_availableamt"))
+
+    suiteTest.addTest(TestWithdraw("test_commonwithdraw_fail"))
 
     ##########################投资项目###############################
 
-    suiteTest.addTest(TestInvest("test_invest_amtltmininvestamt"))
-    suiteTest.addTest(TestInvest("test_invest_amtgtbalance"))
-    suiteTest.addTest(TestInvest("test_invest_amteqmininvestamt"))
+    # suiteTest.addTest(TestInvest("test_invest_amtltmininvestamt"))
+    # suiteTest.addTest(TestInvest("test_invest_amtgtbalance"))
+    # suiteTest.addTest(TestInvest("test_invest_amteqmininvestamt"))
 
     # suiteTest.addTest(TestLogin("test_login_quit"))
 

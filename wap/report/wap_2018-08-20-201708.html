@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">wap自动化测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 最棒QA</p>
-<p class='attribute'><strong>开始时间 : </strong> 2018-08-20 18:32:14</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:02:02.051000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 15，通过 15，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-08-20 20:17:08</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:34.341000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，错误 1，通过率= 50.00%</p>
 
 <p class='description'></p>
 </div>
@@ -133,10 +133,10 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 15 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 15 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -170,110 +170,50 @@ function html_escape(s) {
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr class='passClass warning'>
-    <td>cases.charge.TestCharge</td>
-    <td class="text-center">6</td>
-    <td class="text-center">6</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',6)" class="detail" id='c2'>详细</a></td>
-</tr>
-
-<tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_null: 充值为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_amtlthundred: 充值金额小于100</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_amteqhundred: 最小充值金额100</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_amtgthundred: 充值金额大于100小于限额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_amtoverquota: 充值金额大于银行卡限额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt2_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_charge_bankcharge: 转账充值</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr class='passClass warning'>
+<tr class='errorClass warning'>
     <td>cases.withdraw.TestWithdraw</td>
-    <td class="text-center">5</td>
-    <td class="text-center">5</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c3',5)" class="detail" id='c3'>详细</a></td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt3_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdraw_null: 提现金额为空</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
+<tr id='ft2_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_commonwithdraw_fail: 大额提现提现金额小于50000</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse">  -->
 
-<tr id='pt3_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdraw_over_todayavailabeamt: 可提现金额不足(先代扣充值)</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse in">
+    <pre>
+    
+ft2_1: &lt;wap.src.pages.withdrawpage.WithdrawPageAction object at 0x00000000034E2550&gt; 超过20秒，页面中未能找到 ('css selector', '#commonWithdraw&gt;div&gt;input') 元素
+Traceback (most recent call last):
+  File "D:\NewPythonWorkplace\wap\cases\withdraw.py", line 166, in test_commonwithdraw_fail
+    self.withdrawpage.input_withdrawamt(amount,False)
+  File "D:\NewPythonWorkplace\wap\src\pages\withdrawpage.py", line 48, in input_withdrawamt
+    self.send_keys(amount, *self.commonwithdrawamt_loc)
+  File "D:\NewPythonWorkplace\wap\src\common\basepage.py", line 49, in send_keys
+    raise e
+AttributeError: 'NoneType' object has no attribute 'clear'
 
-<tr id='pt3_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdraw_over_availableamt: 超过可提现金额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
 
-<tr id='pt3_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdraw_over_realwithdrawamt: 实时提现大于50000元</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt3_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_withdraw_within_availableamt: 实时提现金额小于可提现金额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>cases.invest.TestInvest</td>
-    <td class="text-center">3</td>
-    <td class="text-center">3</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',3)" class="detail" id='c4'>详细</a></td>
-</tr>
-
-<tr id='pt4_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_amtltmininvestamt: 投资金额小于起投金额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt4_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_amtgtbalance: 投资金额大于账户可用余额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
-</tr>
-
-<tr id='pt4_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_amteqmininvestamt: 投资金额等于起投金额</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>15</td>
-    <td>15</td>
+    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td>通过率：100.00%</td>
+    <td>1</td>
+    <td>通过率：50.00%</td>
 </tr>
 </table>
 
