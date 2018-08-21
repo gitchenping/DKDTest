@@ -187,6 +187,15 @@ class TestWithdraw(unittest.TestCase):
         self.withdrawpage.input_withdrawamt(amount, False)
         self.withdrawpage.click_withdrawtoaccountbtn(False)
 
+        # 2.提现前后，金额关系断言
+        time.sleep(3)
+        self.withdrawpage.enter_myaccountpage()
+        # afterchargeamt = self.withdrawpage.get_accountamt()
+
+        self.afterwithdrawamt = self.withdrawpage.get_accountamt()
+
+        self.assertEqual(self.afterwithdrawamt[0] + float(amount), self.beforewithdrawamt[0], "总资产正确")
+        self.assertEqual(self.afterwithdrawamt[1] + float(amount), self.beforewithdrawamt[1], "可用余额正确")
 
 
         pass

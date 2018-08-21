@@ -14,6 +14,7 @@ class WithdrawPageAction(MyAccountPageAction):
     # withdrawlink_loc = (By.LINK_TEXT, '提现')
 
     commonwithdrabtn_loc=(By.LINK_TEXT,'大额提现')
+    continuecommonwithdrabtn_loc=(By.LINK_TEXT,'继续大额提现')
 
     #可提取金额
     availableWithdrawAmt=(By.CLASS_NAME,'availableWithdrawAmt')
@@ -55,6 +56,9 @@ class WithdrawPageAction(MyAccountPageAction):
             self.find_element(*self.withdrawtobankcard_loc).click()
         else:
             self.find_element(*self.commonwithdrawtobankcard_loc).click()
+            #是否继续大额提现弹窗处理
+            self.find_element(*self.continuecommonwithdrabtn_loc).click()
+
 
     def is_on_withdrawpage(self):
         pathnamestr = "return " + "document.location.pathname"
