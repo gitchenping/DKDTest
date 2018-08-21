@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="88be1f1f-32fa-461e-ba7f-f685037e019c" name="默认的" comment="test123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/wap/runtest.py" afterPath="$PROJECT_DIR$/wap/runtest.py" />
-      <change beforePath="$PROJECT_DIR$/web/test_web.py" afterPath="$PROJECT_DIR$/web/test_web.py" />
+      <change beforePath="$PROJECT_DIR$/selftest/testclick.py" afterPath="$PROJECT_DIR$/selftest/testclick.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$Unittests_in_login_py.coverage" NAME="Unittests in login.py Coverage Results" MODIFIED="1531191559587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wap/cases" />
-    <SUITE FILE_PATH="coverage/NewPythonWorkplace$WAP_AUTOTEST.coverage" NAME="WAP_AUTOTEST Coverage Results" MODIFIED="1534761129970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wap" />
+    <SUITE FILE_PATH="coverage/NewPythonWorkplace$WAP_AUTOTEST.coverage" NAME="WAP_AUTOTEST Coverage Results" MODIFIED="1534823373837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wap" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$CONST_TEXT.coverage" NAME="CONST_TEXT Coverage Results" MODIFIED="1532093022086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/APP/config" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$apitest.coverage" NAME="apitest Coverage Results" MODIFIED="1532770141022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selftest" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$API_AUTOTEST.coverage" NAME="API_AUTOTEST Coverage Results" MODIFIED="1530874183344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
@@ -31,7 +30,7 @@
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$richang.coverage" NAME="richang Coverage Results" MODIFIED="1534579867133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selftest" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$APP_AUTOTEST.coverage" NAME="APP_AUTOTEST Coverage Results" MODIFIED="1534496542365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/APP" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$runtest.coverage" NAME="runtest Coverage Results" MODIFIED="1533003088312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wap" />
-    <SUITE FILE_PATH="coverage/NewPythonWorkplace$testclick.coverage" NAME="testclick Coverage Results" MODIFIED="1534744390193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selftest" />
+    <SUITE FILE_PATH="coverage/NewPythonWorkplace$testclick.coverage" NAME="testclick Coverage Results" MODIFIED="1534762643735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selftest" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$Driver__2_.coverage" NAME="Driver (2) Coverage Results" MODIFIED="1531201782368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$Unittests_in_apitest_py.coverage" NAME="Unittests in apitest.py Coverage Results" MODIFIED="1531129450654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selftest" />
     <SUITE FILE_PATH="coverage/NewPythonWorkplace$login.coverage" NAME="login Coverage Results" MODIFIED="1530598631903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
@@ -42,11 +41,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wap/config/config.ini">
+      <file leaf-file-name="expected_conditions.py" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Python27/selenium/webdriver/support/expected_conditions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="23">
+              <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="withdraw.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wap/cases/withdraw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-92">
+              <caret line="186" column="33" lean-forward="false" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="withdrawpage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wap/src/pages/withdrawpage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,78 +74,18 @@
       <file leaf-file-name="suit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wap/suit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="-938">
+              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runtest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wap/runtest.py">
+      <file leaf-file-name="myaccountpage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wap/src/pages/myaccountpage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myaccount.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/myaccount.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_web.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/test_web.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testclick.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selftest/testclick.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="richang.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selftest/richang.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selftest/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wap/cases/login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="166">
+              <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -143,7 +102,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/wap" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -180,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wap/src/pages/withdrawpage.py" />
         <option value="$PROJECT_DIR$/wap/src/common/comm.py" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/APP/config/const.py" />
@@ -220,17 +178,18 @@
         <option value="$PROJECT_DIR$/wap/cases/charge.py" />
         <option value="$PROJECT_DIR$/APP/cases/openaccount.py" />
         <option value="$PROJECT_DIR$/APP/src/pages/capaccountpage.py" />
-        <option value="$PROJECT_DIR$/wap/cases/withdraw.py" />
         <option value="$PROJECT_DIR$/wap/src/pages/investpage.py" />
         <option value="$PROJECT_DIR$/wap/cases/openaccount.py" />
         <option value="$PROJECT_DIR$/selftest/android.py" />
         <option value="$PROJECT_DIR$/wap/config/config.ini" />
-        <option value="$PROJECT_DIR$/wap/suit.py" />
         <option value="$PROJECT_DIR$/wap/selftest/testclick.py" />
-        <option value="$PROJECT_DIR$/selftest/testclick.py" />
         <option value="$PROJECT_DIR$/selftest/test.py" />
         <option value="$PROJECT_DIR$/wap/runtest.py" />
         <option value="$PROJECT_DIR$/web/test_web.py" />
+        <option value="$PROJECT_DIR$/selftest/testclick.py" />
+        <option value="$PROJECT_DIR$/wap/src/pages/withdrawpage.py" />
+        <option value="$PROJECT_DIR$/wap/suit.py" />
+        <option value="$PROJECT_DIR$/wap/cases/withdraw.py" />
       </list>
     </option>
   </component>
@@ -240,11 +199,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-16" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-42" />
+    <option name="y" value="17" />
     <option name="width" value="1361" />
-    <option name="height" value="714" />
+    <option name="height" value="719" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -281,22 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="NewPythonWorkplace" type="cbb8eebc:String" user="NewPythonWorkplace" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="NewPythonWorkplace" type="cbb8eebc:String" user="NewPythonWorkplace" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,7 +283,30 @@
             <path>
               <item name="NewPythonWorkplace" type="b2602c69:ProjectViewProjectNode" />
               <item name="NewPythonWorkplace" type="462c0819:PsiDirectoryNode" />
+              <item name="wap" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewPythonWorkplace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewPythonWorkplace" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="NewPythonWorkplace" type="cbb8eebc:String" user="NewPythonWorkplace" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="NewPythonWorkplace" type="cbb8eebc:String" user="NewPythonWorkplace" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
             </path>
           </expand>
           <select />
@@ -799,17 +765,17 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-42" y="17" width="1361" height="719" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4101307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21276596" sideWeight="0.5526518" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4249147" sideWeight="0.62029207" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19453925" sideWeight="0.575711" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3493976" sideWeight="0.4473482" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19453925" sideWeight="0.42428902" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2720984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -859,75 +825,11 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wap/src/common/comm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4715">
-          <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/config/androidcf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selftest/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/src/pages/myaccountpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/src/pages/registerpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1643">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/logout.py" />
-    <entry file="file://$PROJECT_DIR$/wap/src/pages/riskevaluatepage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/riskevaluate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/openaccountpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="314" column="0" lean-forward="true" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/cases/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1535">
@@ -949,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Python27/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="626" column="0" lean-forward="false" selection-start-line="626" selection-start-column="0" selection-end-line="626" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wap/src/pages/chargepage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -968,13 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Python27/selenium/webdriver/support/expected_conditions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="385" column="12" lean-forward="true" selection-start-line="385" selection-start-column="12" selection-end-line="385" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1041,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/invest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wap/src/pages/investpage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-391">
@@ -1055,61 +936,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wap/src/pages/myaccountpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="130" column="8" lean-forward="false" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wap/src/pages/loginpage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Python27/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/src/common/HTMLTestRunnerCN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="574" column="0" lean-forward="false" selection-start-line="574" selection-start-column="0" selection-end-line="574" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Python27/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/src/common/basepage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1656">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/src/pages/withdrawpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/withdraw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1126,14 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/cases/charge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4025">
-          <caret line="193" column="29" lean-forward="false" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1141,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,23 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/suit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wap/runtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,15 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selftest/testclick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,6 +992,182 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="282" column="8" lean-forward="false" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/invest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/cases/charge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="193" column="29" lean-forward="false" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/cases/invest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="150" column="62" lean-forward="true" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selftest/testclick.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/selenium/webdriver/remote/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1151" column="0" lean-forward="false" selection-start-line="1151" selection-start-column="0" selection-end-line="1151" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/urlparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/httplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1052" column="0" lean-forward="false" selection-start-line="1052" selection-start-column="0" selection-end-line="1052" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/selenium/webdriver/remote/remote_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="465" column="0" lean-forward="false" selection-start-line="465" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/src/common/HTMLTestRunnerCN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="574" column="0" lean-forward="false" selection-start-line="574" selection-start-column="0" selection-end-line="574" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="392" column="0" lean-forward="false" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="954" column="0" lean-forward="false" selection-start-line="954" selection-start-column="0" selection-end-line="954" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/runtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/selenium/webdriver/support/wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python27/selenium/webdriver/support/expected_conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/src/pages/myaccountpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/suit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/src/common/basepage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/src/pages/withdrawpage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wap/cases/withdraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="186" column="33" lean-forward="false" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
           <folding />
         </state>
       </provider>
