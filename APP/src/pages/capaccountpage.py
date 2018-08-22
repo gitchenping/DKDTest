@@ -7,7 +7,7 @@ from APP.config.By import BankList_LOC,CAPACCOUNT_LOC,AccountInfo_LOC,LMOpen_LOC
 
 from APP.src.common import uihelper
 from appium.webdriver.common.touch_action import TouchAction
-
+import os
 
 
 class CapAccountPage(MyAccountPage):
@@ -118,35 +118,42 @@ class CapAccountPage(MyAccountPage):
 
         self.comfindElement(CAPACCOUNT_LOC['OpenAccountBtnSubmit']).click()
 
+
+
         pass
 
     def fill_lminfo(self,tradepassword):
 
-        #获取验证码
-        navcode=LMOpen_LOC['VerifyCodeBtn']
-        navcode_pos=(MobileBy.ACCESSIBILITY_ID,navcode)
-        know=LMOpen_LOC['Know']
-        know_pos=(MobileBy.ACCESSIBILITY_ID,know)
+        adb_cmd = "adb shell monkey  -f /sdcard/myfile/login.txt -v 1"
 
-        # self.findElement(navcode_pos).click()
-        # self.findElement(know_pos).click()
+        os.system(adb_cmd)
 
-        #填写短信验证码、交易密码
-        msgcode_tradecode=(MobileBy.CLASS_NAME,LMOpen_LOC['VerifyCodeText'])
-        ele=self.findElements(msgcode_tradecode)
-        print self.driver.context
-        # ele=self.driver.find_elements_by_class_name(LMOpen_LOC['VerifyCodeText'])
-        print ele
-        ele[0].send_keys('1234')
-        ele[1].send_keys(tradepassword)
-        ele[2].send_keys(tradepassword)
+
+        # #获取验证码
+        # navcode=LMOpen_LOC['VerifyCodeBtn']
+        # navcode_pos=(MobileBy.ACCESSIBILITY_ID,navcode)
+        # know=LMOpen_LOC['Know']
+        # know_pos=(MobileBy.ACCESSIBILITY_ID,know)
+        #
+        # # self.findElement(navcode_pos).click()
+        # # self.findElement(know_pos).click()
+        #
+        # #填写短信验证码、交易密码
+        # msgcode_tradecode=(MobileBy.CLASS_NAME,LMOpen_LOC['VerifyCodeText'])
+        # ele=self.findElements(msgcode_tradecode)
+        # print self.driver.context
+        # # ele=self.driver.find_elements_by_class_name(LMOpen_LOC['VerifyCodeText'])
+        # print ele
+        # ele[0].send_keys('1234')
+        # ele[1].send_keys(tradepassword)
+        # ele[2].send_keys(tradepassword)
 
 
 
         #同意协议并注册
-        register=LMOpen_LOC['RegisterBtn']
-        register_loc=(MobileBy.ACCESSIBILITY_ID,register)
-        self.findElement(register_loc).click()
+        # register=LMOpen_LOC['RegisterBtn']
+        # register_loc=(MobileBy.ACCESSIBILITY_ID,register)
+        # self.findElement(register_loc).click()
 
         pass
 

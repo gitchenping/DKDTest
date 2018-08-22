@@ -4,7 +4,6 @@
     <list default="true" id="88be1f1f-32fa-461e-ba7f-f685037e019c" name="默认的" comment="test123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/selftest/testclick.py" afterPath="$PROJECT_DIR$/selftest/testclick.py" />
-      <change beforePath="$PROJECT_DIR$/wap/suit.py" afterPath="$PROJECT_DIR$/wap/suit.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +74,8 @@
       <file leaf-file-name="suit.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wap/suit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="230">
+              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -201,7 +200,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="31" />
+    <option name="x" value="19" />
     <option name="y" value="17" />
     <option name="width" value="1361" />
     <option name="height" value="719" />
@@ -766,7 +765,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="17" width="1361" height="719" extended-state="1" />
+    <frame x="19" y="17" width="1361" height="719" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1142,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wap/suit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="230">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding />
         </state>
       </provider>

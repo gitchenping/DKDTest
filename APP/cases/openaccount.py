@@ -92,7 +92,9 @@ openaccount.push_idimg(headimgpath)
 
 openaccount.fill_capaccount_info(accountinfo[0],accountinfo[1],accountinfo[2],accountinfo[3])
 openaccount.uploadidshot()
-openaccount.fill_lminfo("999999")
+time.sleep(10)
+# openaccount.fill_lminfo("999999")
+time.sleep(10)
 
 # from appium.webdriver.common.mobileby import MobileBy
 # nav=(MobileBy.CLASS_NAME,'android.widget.TextView')

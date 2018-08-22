@@ -25,7 +25,7 @@ def suite_stock():
     # suiteTest.addTest(TestRiskEvaluate("test_riskevaluate_complete"))
     #
     # ########################充值######################
-    # suiteTest.addTest(TestCharge("test_charge_null"))
+    suiteTest.addTest(TestCharge("test_charge_null"))
     # suiteTest.addTest(TestCharge("test_charge_amtlthundred"))
     # suiteTest.addTest(TestCharge("test_charge_amteqhundred"))
     # suiteTest.addTest(TestCharge("test_charge_amtgthundred"))
@@ -39,7 +39,7 @@ def suite_stock():
     suiteTest.addTest(TestWithdraw("test_withdraw_over_realwithdrawamt"))
     # suiteTest.addTest(TestWithdraw("test_withdraw_within_availableamt"))
 
-    suiteTest.addTest(TestWithdraw("test_commonwithdraw_fail"))
+    # suiteTest.addTest(TestWithdraw("test_commonwithdraw_fail"))
     # suiteTest.addTest(TestWithdraw("test_commonwithdraw"))
 
 

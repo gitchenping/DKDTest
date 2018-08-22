@@ -1,0 +1,29 @@
+:Monkey: seed=1536022334051 count=1
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+Replaying 0 events with speed 0.0
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.pitaya.daokoudai/.view.activity.welcome.StartActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pitaya.daokoudai/.view.activity.welcome.StartActivity } in package com.pitaya.daokoudai
+:Sending Touch (ACTION_DOWN): 0:(868.0,1045.0)
+:Sending Touch (ACTION_UP): 0:(868.0,1045.0)
+    // Allowing start of Intent { cmp=com.pitaya.daokoudai/.view.activity.common.WebBrowserLmAuthActivity (has extras) } in package com.pitaya.daokoudai
+:Sending Touch (ACTION_DOWN): 0:(498.0,1240.0)
+:Sending Touch (ACTION_UP): 0:(498.0,1240.0)
+:Sending Touch (ACTION_DOWN): 0:(498.0,1440.0)
+:Sending Touch (ACTION_UP): 0:(498.0,1440.0)
+    // Allowing start of Intent { cmp=com.pitaya.daokoudai/.view.activity.welcome.LaunchScreenActivity } in package com.pitaya.daokoudai
+    // activityResuming(com.pitaya.daokoudai)
+    // Allowing start of Intent { cmp=com.pitaya.daokoudai/.view.activity.welcome.WelcomeActivity } in package com.pitaya.daokoudai
+    // activityResuming(com.pitaya.daokoudai)
+    // Allowing start of Intent { cmp=com.pitaya.daokoudai/.view.activity.welcome.TabMainActivity } in package com.pitaya.daokoudai
+    // activityResuming(com.pitaya.daokoudai)
+    // Allowing start of Intent { cmp=com.pitaya.daokoudai/.view.activity.common.GestureLockScreenActivity (has extras) } in package com.pitaya.daokoudai
+// Shell command input text 999999 status was 0
+:Sending Touch (ACTION_DOWN): 0:(498.0,1640.0)
+:Sending Touch (ACTION_UP): 0:(498.0,1640.0)
+// Shell command input text 999999 status was 0
+Events injected: 13
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=2 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=5104ms (0ms mobile, 0ms wifi, 5104ms not connected)
+// Monkey finished
