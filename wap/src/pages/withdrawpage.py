@@ -39,6 +39,8 @@ class WithdrawPageAction(MyAccountPageAction):
 
     #提现页面相对位置
     withdraw_path="/withdraw/withdraw"
+    realwithdraw_title="普通提现"
+    commonwithdraw_title="大额提现"
 
 
     #提现金额输入
@@ -57,7 +59,8 @@ class WithdrawPageAction(MyAccountPageAction):
         else:
             self.find_element(*self.commonwithdrawtobankcard_loc).click()
             #是否继续大额提现弹窗处理
-            self.find_element(*self.continuecommonwithdrabtn_loc).click()
+
+            # self.find_element(*self.continuecommonwithdrabtn_loc).click()
 
 
     def is_on_withdrawpage(self):
@@ -75,9 +78,20 @@ class WithdrawPageAction(MyAccountPageAction):
         return float(amtstr.replace(',',''))
 
     def enter_commonwithdrawpage(self):
+        time.sleep(5) #显式等待
+        # self.wait_page_onload()
+        js_str="return document.title"
+        title=self.driver.execute_script(js_str)
+        if title==self.commonwithdraw_title:
+            pass
+        else:
+            if self.is_on_withdrawpage():
 
-        ele=self.find_element(*self.commonwithdrabtn_loc)
-        ele.click()
+                ele=self.find_element(*self.commonwithdrabtn_loc)
+                ele.click()
+            else:
+                #直接进入提现页面
+                pass
 
 
 

@@ -7,6 +7,7 @@ import ConfigParser
 
 from wap.config.Driver import driver
 from wap.src.pages.chargepage import ChargePageAction
+from wap.src.pages.tradedetailpage import TradeDetailPageAction
 
 config_path=os.path.abspath(os.path.dirname(os.path.dirname(__file__)))+"\\config\\config.ini"
 cf=ConfigParser.ConfigParser()
@@ -119,6 +120,13 @@ class TestCharge(unittest.TestCase):
             self.beforechargeamt[1]=afterchargeamt[1]
 
             #3、交易明细断言
+            trade=TradeDetailPageAction(driver)
+            tradeinfo=trade.get_traderecord('charge')
+
+            #交易金额
+            self.assertEqual(float(amount),tradeinfo[0])
+            # self.assertEqual()
+
 
         else:
             self.assertTrue(alert,"没有确认充值弹窗,页面没跳转")
@@ -161,6 +169,7 @@ class TestCharge(unittest.TestCase):
             self.beforechargeamt[1] = afterchargeamt[1]
 
             # 3、交易明细断言
+
 
         else:
             self.assertTrue(alert, "没有确认充值弹窗,页面没跳转")

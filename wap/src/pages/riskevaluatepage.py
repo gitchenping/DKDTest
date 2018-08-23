@@ -2,7 +2,7 @@
 """页面基本操作方法：如open，input_username，input_password，click_submit"""
 from selenium.webdriver.common.by import By
 from myaccountpage import MyAccountPageAction
-
+import time
 
 # 继承MyAccountPageAction类
 class RiskEvaluateAction(MyAccountPageAction):
@@ -56,6 +56,8 @@ class RiskEvaluateAction(MyAccountPageAction):
     def enter_questionare(self):
         self.find_element(*self.risklink_loc).click()
         # print "begin"
+        # self.wait_page_onload()
+        time.sleep(3)
         ele=self.find_element(*self.evaluationsubmit_loc)
         ele.click()
 

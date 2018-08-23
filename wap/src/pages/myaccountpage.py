@@ -29,6 +29,9 @@ class MyAccountPageAction(BasePage):
     # 账户view
     accountview_loc = (By.CSS_SELECTOR, 'a[href="/account/overview"]')
 
+    #交易明细
+    traderecord_loc=(By.CSS_SELECTOR,'a[href="/manage/transRecord"]')
+
 
     #我的账户页面相对地址
     path="/account/overview"
@@ -71,10 +74,17 @@ class MyAccountPageAction(BasePage):
         time.sleep(1)
 
         self.find_element(*self.withdrawlink_loc).click()
+        time.sleep(1)
+        self.wait_page_onload()
+
 
     def click_accountbtn(self):
         time.sleep(2)
         self.find_element(*self.shaccountlink_loc).click()
+
+    def click_traderecordbtn(self):
+
+        self.find_element(*self.traderecord_loc).click()
 
 
 
